@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Shankar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <nav>
@@ -13,35 +21,95 @@
 
 <header class="hero">
     <h1>Balaji Shankar</h1>
-    <p>Software Testing | Integration | ADAS | Embedded Systems</p>
+    <p id="typing"></p>
+    <a href="#contact" class="btn">Contact Me</a>
 </header>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I work in software testing, system integration, and ADAS validation in the automotive industry. I am interested in embedded systems, automation, and complex system testing.</p>
+    <p>
+        I am a Software Test and Integration Engineer working in automotive systems,
+        focusing on ADAS parking validation, system integration testing, automation,
+        and embedded systems. I enjoy debugging complex systems, automation using Python,
+        and working with Linux environments and system testing.
+    </p>
 </section>
 
 <section id="experience">
     <h2>Experience</h2>
-    <p>Working Student – Mercedes-Benz (ADAS Parking Test & Validation)</p>
-    <p>QA System Engineer – TCS</p>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>Working Student – ADAS Parking Test & Validation</h3>
+            <p>Mercedes-Benz | 2026 – Present</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>QA System Engineer</h3>
+            <p>Tata Consultancy Services | 2021 – 2023</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Embedded Systems Intern</h3>
+            <p>Hindustan Aeronautics Limited | 2019</p>
+        </div>
+    </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-    <p>Medical Database with Facial Recognition and RFID</p>
-    <p>Human Activity Recognition using Sensor Data</p>
+    <div class="cards">
+        <div class="card">
+            <h3>Medical Database with Facial Recognition</h3>
+            <p>Raspberry Pi, Python, OpenCV, MySQL, RFID</p>
+        </div>
+
+        <div class="card">
+            <h3>Human Activity Recognition</h3>
+            <p>Machine Learning, Python, Sensor Data</p>
+        </div>
+
+        <div class="card">
+            <h3>Test Automation Framework</h3>
+            <p>Selenium, TestNG, Jenkins</p>
+        </div>
+    </div>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
-    <p>Python, Linux, Testing, Integration, ADAS, Git, CI/CD, SQL</p>
+
+    <div class="skill">
+        <p>Python</p>
+        <div class="bar"><div class="progress" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Software Testing</p>
+        <div class="bar"><div class="progress" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Integration Testing</p>
+        <div class="bar"><div class="progress" style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Linux</p>
+        <div class="bar"><div class="progress" style="width:70%"></div></div>
+    </div>
+
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: balajishankar4444@gmail.com</p>
+    <p>GitHub: github.com/Balajishankar4444</p>
 </section>
+
+<footer>
+    <p>© 2026 Balaji Shankar</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
+</html>
