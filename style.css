@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial;
@@ -27,15 +31,73 @@ nav a {
 
 .hero {
     text-align: center;
-    padding: 120px 20px;
+    padding: 150px 20px;
+}
+
+.btn {
+    background: #3b82f6;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 section {
     padding: 80px 20px;
     max-width: 900px;
     margin: auto;
+    animation: fadeIn 1s ease;
 }
 
 h2 {
     color: #3b82f6;
+}
+
+.timeline {
+    border-left: 3px solid #3b82f6;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #121826;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.bar {
+    background: #1f2937;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress {
+    background: #3b82f6;
+    height: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #121826;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
