@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<nav>
+<div id="particles"></div>
+
+<nav id="navbar">
     <h2>Balaji</h2>
     <ul>
         <li><a href="#about">About</a></li>
@@ -22,60 +24,61 @@
 <header class="hero">
     <h1>Balaji Shankar</h1>
     <p id="typing"></p>
-    <a href="#contact" class="btn">Contact Me</a>
+    <div class="hero-buttons">
+        <a href="#contact" class="btn">Contact</a>
+        <a href="#" class="btn">Download CV</a>
+    </div>
 </header>
 
-<section id="about">
+<section id="about" class="reveal">
     <h2>About Me</h2>
     <p>
-        I am a Software Test and Integration Engineer working in automotive systems,
-        focusing on ADAS parking validation, system integration testing, automation,
-        and embedded systems. I enjoy debugging complex systems, automation using Python,
-        and working with Linux environments and system testing.
+        Software Test and Integration Engineer working on automotive ADAS systems,
+        system integration, automation, and embedded systems.
     </p>
 </section>
 
-<section id="experience">
+<section id="experience" class="reveal">
     <h2>Experience</h2>
     <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item glass">
             <h3>Working Student – ADAS Parking Test & Validation</h3>
             <p>Mercedes-Benz | 2026 – Present</p>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item glass">
             <h3>QA System Engineer</h3>
-            <p>Tata Consultancy Services | 2021 – 2023</p>
+            <p>TCS | 2021 – 2023</p>
         </div>
 
-        <div class="timeline-item">
-            <h3>Embedded Systems Intern</h3>
-            <p>Hindustan Aeronautics Limited | 2019</p>
+        <div class="timeline-item glass">
+            <h3>Embedded Intern</h3>
+            <p>HAL | 2019</p>
         </div>
     </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
     <h2>Projects</h2>
     <div class="cards">
-        <div class="card">
-            <h3>Medical Database with Facial Recognition</h3>
-            <p>Raspberry Pi, Python, OpenCV, MySQL, RFID</p>
+        <div class="card glass">
+            <h3>Facial Recognition RFID</h3>
+            <p>Raspberry Pi, Python, OpenCV</p>
         </div>
 
-        <div class="card">
+        <div class="card glass">
             <h3>Human Activity Recognition</h3>
-            <p>Machine Learning, Python, Sensor Data</p>
+            <p>Machine Learning, Sensor Data</p>
         </div>
 
-        <div class="card">
-            <h3>Test Automation Framework</h3>
-            <p>Selenium, TestNG, Jenkins</p>
+        <div class="card glass">
+            <h3>Test Automation</h3>
+            <p>Selenium, Jenkins</p>
         </div>
     </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="reveal">
     <h2>Skills</h2>
 
     <div class="skill">
@@ -93,22 +96,14 @@
         <div class="bar"><div class="progress" style="width:75%"></div></div>
     </div>
 
-    <div class="skill">
-        <p>Linux</p>
-        <div class="bar"><div class="progress" style="width:70%"></div></div>
-    </div>
-
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
     <h2>Contact</h2>
     <p>Email: balajishankar4444@gmail.com</p>
-    <p>GitHub: github.com/Balajishankar4444</p>
 </section>
 
-<footer>
-    <p>© 2026 Balaji Shankar</p>
-</footer>
+<button id="topBtn">↑</button>
 
 <script src="script.js"></script>
 </body>
