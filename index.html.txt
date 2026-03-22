@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Shankar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Balaji Shankar</h1>
+        <p>Software Testing | Integration | ADAS | Embedded Systems</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am an Electrical and Communication Engineer working in software testing,
+            system integration, and ADAS validation. I am interested in embedded systems,
+            automation, and complex system testing.
+        </p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Medical Database with Facial Recognition and RFID</li>
+            <li>Human Activity Recognition using Sensor Data</li>
+            <li>Automation Testing Projects</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: balajishankar4444@gmail.com</p>
+        <p>GitHub: github.com/Balajishankar4444</p>
+    </section>
+
+</body>
+</html>
