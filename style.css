@@ -5,63 +5,55 @@ html {
 body {
     margin: 0;
     font-family: Arial;
-    background: #0b0f19;
+    background: linear-gradient(120deg, #0b0f19, #111827);
     color: white;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background: #121826;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(18, 24, 38, 0.7);
+    backdrop-filter: blur(10px);
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Hero */
 .hero {
     text-align: center;
-    padding: 150px 20px;
+    padding: 180px 20px;
 }
 
+/* Buttons */
 .btn {
     background: #3b82f6;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin: 10px;
 }
 
+/* Sections */
 section {
     padding: 80px 20px;
     max-width: 900px;
     margin: auto;
-    animation: fadeIn 1s ease;
 }
 
 h2 {
     color: #3b82f6;
 }
 
+/* Timeline */
 .timeline {
     border-left: 3px solid #3b82f6;
     padding-left: 20px;
 }
 
-.timeline-item {
-    margin-bottom: 30px;
-}
-
+/* Cards */
 .cards {
     display: flex;
     gap: 20px;
@@ -69,16 +61,18 @@ h2 {
 }
 
 .card {
-    background: #121826;
     padding: 20px;
     border-radius: 10px;
     width: 250px;
 }
 
-.skill {
-    margin-bottom: 20px;
+/* Glass effect */
+.glass {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
 }
 
+/* Skills */
 .bar {
     background: #1f2937;
     height: 10px;
@@ -91,13 +85,26 @@ h2 {
     border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #121826;
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Top button */
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
 }
