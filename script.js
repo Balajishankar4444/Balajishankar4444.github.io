@@ -32,5 +32,61 @@ window.addEventListener("scroll", function() {
 });
 
 // Back to top
-const topBtn = document.getElementById("topBtn");
-topBtn.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+document.getElementById("topBtn").onclick = () =>
+    window.scrollTo({top:0, behavior:'smooth'});
+
+// Theme toggle
+document.getElementById("themeToggle").onclick = function() {
+    document.body.classList.toggle("light-mode");
+};
+
+// Cursor glow
+const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", e => {
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
+});
+
+// Modal
+function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+// Counters
+function counter(id, target) {
+    let count = 0;
+    let interval = setInterval(() => {
+        count++;
+        document.getElementById(id).innerText = count;
+        if(count == target) clearInterval(interval);
+    }, 50);
+}
+
+counter("exp", 3);
+counter("proj", 5);
+counter("skillsN", 10);
+
+// Active navbar highlight
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav ul li a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(a => {
+        a.classList.remove("active");
+        if (a.getAttribute("href") == "#" + current) {
+            a.classList.add("active");
+        }
+    });
+});
