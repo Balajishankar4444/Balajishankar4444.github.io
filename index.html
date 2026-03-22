@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div id="particles"></div>
+<div class="cursor"></div>
 
 <nav id="navbar">
     <h2>Balaji</h2>
@@ -18,17 +18,21 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <button id="themeToggle">🌙</button>
     </ul>
+    <button id="themeToggle">🌙</button>
 </nav>
 
 <header class="hero">
     <h1>Balaji Shankar</h1>
     <p id="typing"></p>
-    <div class="hero-buttons">
-        <a href="#contact" class="btn">Contact</a>
-        <a href="#" class="btn">Download CV</a>
+
+    <div class="stats">
+        <div><h2 id="exp">0</h2><p>Years Experience</p></div>
+        <div><h2 id="proj">0</h2><p>Projects</p></div>
+        <div><h2 id="skillsN">0</h2><p>Skills</p></div>
     </div>
+
+    <a href="#contact" class="btn">Contact</a>
 </header>
 
 <section id="about" class="reveal">
@@ -62,14 +66,14 @@
 <section id="projects" class="reveal">
     <h2>Projects</h2>
     <div class="cards">
-        <div class="card glass">
+        <div class="card glass" onclick="openModal()">
             <h3>Facial Recognition RFID</h3>
-            <p>Raspberry Pi, Python, OpenCV</p>
+            <p>Click for details</p>
         </div>
 
         <div class="card glass">
             <h3>Human Activity Recognition</h3>
-            <p>Machine Learning, Sensor Data</p>
+            <p>Machine Learning Project</p>
         </div>
 
         <div class="card glass">
@@ -102,7 +106,16 @@
 <section id="contact" class="reveal">
     <h2>Contact</h2>
     <p>Email: balajishankar4444@gmail.com</p>
+    <p>GitHub: github.com/Balajishankar4444</p>
 </section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()">X</span>
+        <h2>Project Details</h2>
+        <p>Medical database with facial recognition and RFID using Raspberry Pi and Python.</p>
+    </div>
+</div>
 
 <button id="topBtn">↑</button>
 
